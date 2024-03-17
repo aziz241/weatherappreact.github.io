@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  position: relative;
+  color: rgb(10, 50, 73);
+}
+.weather-main {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: aliceblue;
+  background-color: rgba(76, 118, 143, 0.692);
+}
+.weather-app {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-clip: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../src/components/img/winter2.jpg");
+}
+.weather-app__main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(76, 118, 143, 0.74);
+  text-align: center;
+  color: #fff;
+}
+.weather-app__main--box {
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.weather-app__main--box--img {
+  height: 5rem;
+}
+
+.degree {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.ortdegree {
+  display: block;
+  font-size: 1.1rem;
+}
+.boxgroup {
+  padding: 1.2rem;
+  width: auto;
+}
+.weather-city {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.weather-cities {
+  padding: 0.5rem;
+  width: 25%;
+  outline: none;
+  border: 0;
+  margin: 0.5rem;
+}
+.city-heading {
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  .weather-main {
+    font-size: 1.2rem;
+  }
+
+  .boxgroup {
+    padding: 0.4rem;
+  }
+  .degree {
+    font-size: unset;
+  }
+  .ortdegree {
+    font-size: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .weather-cities {
+    width: 80%;
+    margin: 0 0 1rem;
+  }
+  .weather-app__main--box--img {
+    height: 3rem;
+  }
+  .boxgroup {
+    padding: 0.2rem;
+  }
+  .degree {
+    font-size: 0.9rem;
+  }
+  .ortdegree {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .weather-app__main--box--img {
+    height: 2rem;
+  }
+  .boxgroup {
+    padding: 0.2rem;
+  }
+  .degree {
+    font-size: 0.8rem;
+  }
+  .ortdegree {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .weather-app__main--box--img {
+    height: 1.5rem;
+  }
+  .boxgroup {
+    padding: 0.1rem;
+  }
+  .degree {
+    font-size: 0.6rem;
+  }
+  .ortdegree {
+    font-size: 0.6rem;
+  }
+}
