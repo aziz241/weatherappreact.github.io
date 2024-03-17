@@ -16,7 +16,7 @@ function Cities({ setCity, setWeather }) {
 
 
         if (selectedCity) {
-            fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${selectedCity}&limit=1&appid=${api_2}`)
+            fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${selectedCity}&limit=1&appid=${api_2}`)
                 .then(res => res.json())
                 .then((res) => {
                     // fetch(`https://api.weatherbit.io/v2.0/current?lat=${res[0].lat}&lon=${res[0].lon}&key=${api}&include=minutely`)
